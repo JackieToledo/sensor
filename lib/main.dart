@@ -46,7 +46,7 @@ class Bailarin extends State {
     accelerometerEvents.listen((AccelerometerEvent event) {
       setState(() {
         acelerometro = event;
-        if (acelerometro.x < 1.2 && acelerometro.x > -1.3) {
+        if (acelerometro.x < 1.2 && acelerometro.x > -1.2) {
           imagen = 'images/bailarin_e.jpg';
         } else if (acelerometro.x <= 1.2) {
           imagen = 'images/bailarin_izq.jpg';
